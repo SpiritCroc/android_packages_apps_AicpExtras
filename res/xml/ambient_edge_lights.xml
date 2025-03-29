@@ -18,6 +18,11 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="ambient_edge_lights"
+    android:title="" />
+
+<!--
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aicpextras="http://schemas.android.com/apk/res-auto"
     android:key="ambient_edge_lights"
     android:title="@string/pulse_ambient_light_enable_title">
@@ -74,3 +79,4 @@
             android:defaultValue="125" />
 
 </PreferenceScreen>
+-->

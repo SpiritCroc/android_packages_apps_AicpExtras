@@ -42,7 +42,8 @@ import com.aicp.extras.R;
 import com.aicp.gear.preference.SystemSettingIntListPreference;
 import com.aicp.gear.preference.SystemSettingListPreference;
 import com.aicp.gear.util.DeviceUtils;
-import com.android.internal.util.aicp.AicpUtils;
+
+//import com.android.internal.util.aicp.AicpUtils;
 
 import java.util.Date;
 
@@ -66,6 +67,7 @@ public class StatusBarClockSettings extends BaseSettingsFragment implements OnPr
         return R.xml.status_bar_clock;
     }
 
+    /*
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,9 +107,11 @@ public class StatusBarClockSettings extends BaseSettingsFragment implements OnPr
             mClockPosition.setEntryValues(R.array.clock_position_values_notch);
         }
     }
+    */
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        /*
         AlertDialog dialog;
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mClockDateFormat) {
@@ -165,9 +169,11 @@ public class StatusBarClockSettings extends BaseSettingsFragment implements OnPr
             }
             return true;
         }
+        */
         return false;
     }
 
+    /*
     private void parseClockDateFormats() {
         String[] dateEntries = getResources().getStringArray(
                 R.array.clock_date_format_entries_values);
@@ -197,4 +203,5 @@ public class StatusBarClockSettings extends BaseSettingsFragment implements OnPr
         }
         mClockDateFormat.setEntries(parsedDateEntries);
     }
+    */
 }
